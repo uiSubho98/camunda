@@ -37,7 +37,7 @@ const getPropertyAppraisal = async (propertyId) => {
     propertyId: propertyId,
     appraisalValue: Math.floor(Math.random() * 1000000) + 100000,  // Random appraisal value
     status: "Completed",
-    date: new Date().toISOString()
+    date: new Date().toISOString().split('T')[0]
   };
 };
 
