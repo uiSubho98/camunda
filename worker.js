@@ -10,7 +10,7 @@ const PORT = 5000;
 const getCreditCheck = () => {
   // Here you can simulate the credit check logic.
   // For now, let's assume the result is "Approved".
-  return "Approved"; // Change to "Denied" to simulate a denied credit check
+  return "Denied"; // Change to "Denied" to simulate a denied credit check
 };
 
 // Define the route for credit check
@@ -65,8 +65,8 @@ app.get('/order-property-appraisal/:propertyId', async (req, res) => {
 });
 
 // Define the route that returns the dummy response to notify applicant where mail sent rejection
-app.get('/send-mail', (req, res) => {
-  res.json({ response: "Mail  of rejection" });
+app.get('/c', (req, res) => {
+  res.json({ response: "Mail of rejection sent" });
 });
 
 
