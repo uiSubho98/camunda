@@ -65,7 +65,7 @@ app.get('/order-property-appraisal/:propertyId', async (req, res) => {
 });
 
 // Define the route that returns the dummy response to notify applicant where mail sent rejection
-app.get('/c', (req, res) => {
+app.get('/send-mail', (req, res) => {
   res.json({ response: "Mail of rejection sent" });
 });
 
