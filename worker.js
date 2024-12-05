@@ -10,7 +10,7 @@ const PORT = 5000;
 const getCreditCheck = () => {
   // Here you can simulate the credit check logic.
   // For now, let's assume the result is "Approved".
-  return "Denied"; // Change to "Denied" to simulate a denied credit check
+  return "Approved"; // Change to "Denied" to simulate a denied credit check
 };
 
 // Define the route for credit check
