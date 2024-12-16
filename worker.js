@@ -86,6 +86,17 @@ app.post('/sendLoanAgreement', (req, res) => {
 
 
 
+
+app.post('/generateLoanAgreement', (req, res) => {
+
+  // Respond with the same data received
+  res.json({
+    message: "Loan agreement generated .",
+  
+  });
+});
+
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
