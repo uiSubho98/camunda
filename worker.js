@@ -65,9 +65,25 @@ app.get('/order-property-appraisal/:propertyId', async (req, res) => {
 });
 
 // Define the route that returns the dummy response to notify applicant where mail sent rejection
-app.get('/send-mail', (req, res) => {
+app.post('/send-mail', (req, res) => {
   res.json({ response: "Mail of rejection sent" });
 });
+
+
+
+//send loan agreement
+
+app.post('/sendLoanAgreement', (req, res) => {
+  // Extract the incoming request body
+  const requestBody = req.body;
+
+  // Respond with the same data received
+  res.json({
+    message: "Loan agreement received and echoed back.",
+    data: requestBody
+  });
+});
+
 
 
 // Start the server
